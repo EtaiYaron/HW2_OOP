@@ -18,6 +18,16 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DeliveryPerson.h" />
+    <ClInclude Include="Florist.h" />
+    <ClInclude Include="FlowerArranger.h" />
+    <ClInclude Include="FlowerBouquet.h" />
+    <ClInclude Include="Gardener.h" />
+    <ClInclude Include="Grower.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="Wholesaler.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
