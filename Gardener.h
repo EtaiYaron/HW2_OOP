@@ -2,11 +2,12 @@
 
 #include "FlowerBouquet.h"
 
-class Gardener
+class Gardener : Person
 {
 private:
 
 public:
+	Gardener(std::string name);
 	FlowerBouquet* prepareBouquet(std::vector<std::string> bouquet);
 
 };

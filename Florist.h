@@ -3,7 +3,7 @@
 #include "Wholesaler.h"
 #include "FlowerArranger.h"
 
-class Florist
+class Florist : Person
 {
 private:
 	Wholesaler* wholesaler;
@@ -11,6 +11,7 @@ private:
 	DeliveryPerson* deliveryPerson;
 
 public:
+	Florist(std::string name, Wholesaler* wholesaler, FlowerArranger* flowerArranger, DeliveryPerson* deliveryPerson);
 	void acceptOrder(Person* person, std::vector<std::string> bouquet);
 
 };

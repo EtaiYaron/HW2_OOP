@@ -10,6 +10,7 @@ private:
 	bool is_arranged;
 
 public:
+	FlowerBouquet(std::vector<std::string> bouquet);
 	void arrange();
 
 };
