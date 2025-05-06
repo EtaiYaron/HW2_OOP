@@ -35,6 +35,7 @@
     <ClCompile Include="FlowerBouquet.cpp" />
     <ClCompile Include="Gardener.cpp" />
     <ClCompile Include="Grower.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Wholesaler.cpp" />
   </ItemGroup>
