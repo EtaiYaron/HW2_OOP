@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Gardener.h"
+#include "Person.h"
 
 class Grower : Person
 {

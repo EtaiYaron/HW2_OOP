@@ -28,6 +28,15 @@
     <ClInclude Include="Person.h" />
     <ClInclude Include="Wholesaler.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DeliveryPerson.cpp" />
+    <ClCompile Include="Florist.cpp" />
+    <ClCompile Include="FlowerArranger.cpp" />
+    <ClCompile Include="Gardener.cpp" />
+    <ClCompile Include="Grower.cpp" />
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Wholesaler.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

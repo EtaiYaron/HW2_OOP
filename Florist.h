@@ -2,6 +2,7 @@
 
 #include "Wholesaler.h"
 #include "FlowerArranger.h"
+#include "DeliveryPerson.h"
 
 class Florist : Person
 {
