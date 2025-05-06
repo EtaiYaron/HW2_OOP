@@ -32,6 +32,7 @@
     <ClCompile Include="DeliveryPerson.cpp" />
     <ClCompile Include="Florist.cpp" />
     <ClCompile Include="FlowerArranger.cpp" />
+    <ClCompile Include="FlowerBouquet.cpp" />
     <ClCompile Include="Gardener.cpp" />
     <ClCompile Include="Grower.cpp" />
     <ClCompile Include="Person.cpp" />

@@ -12,5 +12,5 @@ public:
 
 	void orderFlowers(Florist* florist, Person* person, std::vector<std::string> bouquet);
 	void acceptFlowers(FlowerBouquet* bouquet);
-
+	std::string getName();
 };
