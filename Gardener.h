@@ -3,7 +3,7 @@
 #include "FlowerBouquet.h"
 #include "Person.h"
 
-class Gardener : Person
+class Gardener : public Person
 {
 private:
 

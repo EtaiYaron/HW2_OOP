@@ -2,7 +2,7 @@
 
 #include "Grower.h"
 
-class Wholesaler : Person
+class Wholesaler : public Person
 {
 private:
 	Grower* grower;

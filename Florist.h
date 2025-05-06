@@ -4,7 +4,7 @@
 #include "FlowerArranger.h"
 #include "DeliveryPerson.h"
 
-class Florist : Person
+class Florist : public Person
 {
 private:
 	Wholesaler* wholesaler;
