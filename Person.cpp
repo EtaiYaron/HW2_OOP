@@ -1,4 +1,6 @@
 #include "Person.h"
+#include "Florist.h"
+#include "FlowerBouquet.h"
 #include <iostream>
 
 Person::Person(std::string name)
@@ -14,7 +16,7 @@ void Person::orderFlowers(Florist* florist, Person* person, std::vector<std::str
 		s += flower + ", ";
 	}
 	s = s.substr(0, s.length() - 2);
-	std::cout << this->getName() << " orders flowers from Florist " << florist-> getName() << ": " << s  << "." << std::endl;
+	std::cout << this->getName() << " orders flowers to " << person->getName() << " from Florist " << florist-> getName() << ": " << s  << "." << std::endl;
 	florist->acceptOrder(person, bouquet);
 }
 

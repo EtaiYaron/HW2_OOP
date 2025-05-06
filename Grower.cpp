@@ -1,4 +1,7 @@
 #include "Grower.h"
+#include "Gardener.h"
+#include "FlowerBouquet.h"
+
 #include <iostream>
 
 Grower::Grower(std::string name, Gardener* gardener) : Person(name)
@@ -9,8 +12,8 @@ Grower::Grower(std::string name, Gardener* gardener) : Person(name)
 
 FlowerBouquet* Grower::prepareOrder(std::vector<std::string> bouquet)
 {
-	std::cout << "Grower " << this->getName() << " fowards the request to Gardner "<< this->gardener->getName() << "." << std::endl;
+	std::cout << "Grower " << this->getName() << " forwards the request to Gardener "<< this->gardener->getName() << "." << std::endl;
 	FlowerBouquet* flowerBouquet = gardener->prepareBouquet(bouquet);
-	std::cout << "Gardner " << this->gardener -> getName() << " returns the flowers to Grower "<< this->getName() << "." << std::endl;
+	std::cout << "Gardener " << this->gardener -> getName() << " returns flowers to Grower "<< this->getName() << "." << std::endl;
 	return flowerBouquet;
 }

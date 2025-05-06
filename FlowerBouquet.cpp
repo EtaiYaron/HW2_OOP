@@ -1,4 +1,6 @@
 #include "FlowerBouquet.h"
+#include <string>
+#include <vector>
 
 FlowerBouquet::FlowerBouquet(std::vector<std::string> bouquet) {
 	this->bouquet = bouquet;

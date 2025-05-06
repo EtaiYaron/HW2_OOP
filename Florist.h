@@ -1,8 +1,12 @@
 #pragma once
 
-#include "Wholesaler.h"
-#include "FlowerArranger.h"
-#include "DeliveryPerson.h"
+#include <vector>
+#include <string>
+#include "Person.h"
+
+class Wholesaler;
+class FlowerArranger;
+class DeliveryPerson;
 
 class Florist : public Person
 {

@@ -1,6 +1,10 @@
 #pragma once
 
-#include "Florist.h"
+#include <string>
+#include <vector>
+
+class Florist;
+class FlowerBouquet;
 
 class Person
 {

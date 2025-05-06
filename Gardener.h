@@ -1,7 +1,8 @@
 #pragma once
 
-#include "FlowerBouquet.h"
 #include "Person.h"
+
+class FlowerBouquet;
 
 class Gardener : public Person
 {

@@ -9,8 +9,8 @@
 
 int main()
 {
-	Person* chris = new Person("Chris");
-	Person* robin = new Person("Robin");
+	Person* from = new Person("Chris");
+	Person* to = new Person("Robin");
 
 	Gardener* gardener = new Gardener("Garett");
 	Grower* grower = new Grower("Gray", gardener);
@@ -23,7 +23,16 @@ int main()
 	v.push_back("Roses");
 	v.push_back("Violets");
 	v.push_back("Gladiolus");
-	chris->orderFlowers(florist, robin, v);
+	from->orderFlowers(florist, to, v);
+
+	delete from;
+	delete to;
+	delete gardener;
+	delete grower;
+	delete delivery;
+	delete wholesaler;
+	delete flowerArranger;
+	delete florist;
 
 	return 0;
 }

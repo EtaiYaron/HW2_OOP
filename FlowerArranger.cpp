@@ -1,4 +1,6 @@
 #include "FlowerArranger.h"
+#include "FlowerBouquet.h"
+
 #include <iostream>
 
 FlowerArranger::FlowerArranger(std::string name) : Person(name)
@@ -6,6 +8,6 @@ FlowerArranger::FlowerArranger(std::string name) : Person(name)
 
 void FlowerArranger::arrangeFlowers(FlowerBouquet* bouquet)
 {
-	std::cout << "Flower Arranger " << this->getName() << "arranges flowers." << std::endl;
+	std::cout << "Flower Arranger " << this->getName() << " arranges flowers." << std::endl;
 	bouquet->arrange();
 }
