@@ -8,7 +8,7 @@ Person::Person(std::string name)
 
 void Person::orderFlowers(Florist* florist, Person* person, std::vector<std::string> bouquet)
 {
-	std::string s;
+	std::string s = "";
 	for (std::string flower : bouquet)
 	{
 		s += flower + ", ";
@@ -20,7 +20,9 @@ void Person::orderFlowers(Florist* florist, Person* person, std::vector<std::str
 
 void Person::acceptFlowers(FlowerBouquet* bouquet)
 {
-
+	std::string s = bouquet->toString();
+	std::cout << this->getName() << " accepts the flowers: "<< s << "." << std::endl;
+	delete bouquet;
 }
 
 std::string Person::getName()
