@@ -14,7 +14,7 @@ void Person::orderFlowers(Florist* florist, Person* person, std::vector<std::str
 		s += flower + ", ";
 	}
 	s = s.substr(0, s.length() - 2);
-	std::cout << person->name << " orders flowers from Florist " << florist-> getName() << ": " << s  << "." << std::endl;
+	std::cout << this->getName() << " orders flowers from Florist " << florist-> getName() << ": " << s  << "." << std::endl;
 	florist->acceptOrder(person, bouquet);
 }
 
