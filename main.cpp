@@ -5,24 +5,47 @@
 #include "DeliveryPerson.h"
 #include "Gardener.h"
 #include "Grower.h"
+#include <iostream>
 
 
 int main()
 {
-	Person* from = new Person("Chris");
-	Person* to = new Person("Robin");
+	std::string str = "";
+	std::cout << "Give me the person's name that sends the flowers" << std::endl;
+	std::cin >> str;
+	Person* from = new Person(str);
+	std::cout << "Give me the person's name that receives the flowers" << std::endl;
+	std::cin >> str;
+	Person* to = new Person(str);
 
-	Gardener* gardener = new Gardener("Garett");
-	Grower* grower = new Grower("Gray", gardener);
-	DeliveryPerson* delivery = new DeliveryPerson("Dylan");
-	Wholesaler* wholesaler = new Wholesaler("Watson", grower);
-	FlowerArranger* flowerArranger = new FlowerArranger("Flora");
-	Florist* florist = new Florist("Fred", wholesaler, flowerArranger, delivery);
+	std::cout << "Give me the name of the flower Gardener" << std::endl;
+	std::cin >> str;
+	Gardener* gardener = new Gardener(str);
+	std::cout << "Give me the name of the flower Grower" << std::endl;
+	std::cin >> str;
+	Grower* grower = new Grower(str, gardener);
+	std::cout << "Give me the name of the flower Delivery Person" << std::endl;
+	std::cin >> str;
+	DeliveryPerson* delivery = new DeliveryPerson(str);
+	std::cout << "Give me the name of the flower Wholesaler" << std::endl;
+	std::cin >> str;
+	Wholesaler* wholesaler = new Wholesaler(str, grower);
+	std::cout << "Give me the name of the flower Arranger" << std::endl;
+	std::cin >> str;
+	FlowerArranger* flowerArranger = new FlowerArranger(str);
+	std::cout << "Give me the name of the flower Florist" << std::endl;
+	std::cin >> str;
+	Florist* florist = new Florist(str, wholesaler, flowerArranger, delivery);
 
 	std::vector<std::string> v;
-	v.push_back("Roses");
-	v.push_back("Violets");
-	v.push_back("Gladiolus");
+	std::cout << "Give me the name of the flowers you want to send" << std::endl;
+	std::cin >> str;
+	while (str != "done")
+	{
+		v.push_back(str);
+		std::cout << "Give me the name of the flowers you want to send (type 'done' when finished)" << std::endl;
+		std::cin >> str;
+	}
 	from->orderFlowers(florist, to, v);
 
 	delete from;
