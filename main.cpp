@@ -10,7 +10,6 @@
 
 int main()
 {
-	// Create instances of each class
 	Person* from = new Person("Chris");
 	Person* to = new Person("Robin");
 	Gardener* gardener = new Gardener("Garret");
